@@ -1,0 +1,91 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+$greyish:#7e7f84;
+$orange:#f45a40;
+$grey: #777;
+$whiteish: #e5e5e5;
+$p-font-size:20px;
+
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #777;
+  height: 70px;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+.nav a{
+  padding-left:0 !important;
+  color: $grey !important;
+}
+
+.nav a:hover{
+  background-color: white !important;
+  color: $orange !important;
+}
+
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: $grey;
+  border-top: 1px solid $whiteish;
+}
+
+
+#searchF{
+  border: none !important;
+  box-shadow: none;
+}
+#searchIcon{
+  padding:none;
+  color: $greyish;
+}
+#myCaro{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#orange{
+  height: 15px;
+  border-top: 8px solid $orange;
+  border-bottom: 2px solid $orange;
+  position: relative;
+  top: 7px;
+  z-index:999;
+}
+
+#cta{
+  padding-top: 70px; 
+  display: flex;
+  justify-content: space-between;
+}
+#cta img{
+  height: 200px;
+  padding-bottom: 20px;
+}
+
+#cta_child{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#cta_child a{
+  color: $orange;
+  font-size: $p-font-size;
+}
