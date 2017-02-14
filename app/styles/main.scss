@@ -2,12 +2,16 @@ $icon-font-path: '../fonts/';
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 // endbower
 $greyish:#7e7f84;
 $orange:#f45a40;
 $grey: #777;
 $whiteish: #e5e5e5;
-$p-font-size:20px;
+$p-font-size: 20px;
+$font-stack: Arial;
+$font-header: PT sans;
+$borderGrey:  1px solid $whiteish;
 
 
 /* Space out content a bit */
@@ -31,7 +35,6 @@ body {
 }
 
 .nav a{
-  padding-left:0 !important;
   color: $grey !important;
 }
 
@@ -45,7 +48,7 @@ body {
 .footer {
   padding-top: 19px;
   color: $grey;
-  border-top: 1px solid $whiteish;
+  border-top: $borderGrey;
 }
 
 
@@ -57,10 +60,7 @@ body {
   padding:none;
   color: $greyish;
 }
-#myCaro{
-  margin: 0 !important;
-  padding: 0 !important;
-}
+
 #orange{
   height: 15px;
   border-top: 8px solid $orange;
@@ -76,7 +76,6 @@ body {
   justify-content: space-between;
 }
 #cta img{
-  height: 200px;
   padding-bottom: 20px;
 }
 
@@ -84,8 +83,80 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  font-family: $font-stack;
 }
 #cta_child a{
   color: $orange;
   font-size: $p-font-size;
+  font-family: $font-header;
+}
+
+#separate{
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: $p-font-size;
+}
+.line{
+  height: 1px;
+  width: 140px;
+  border: $borderGrey;
+  align-self: flex-center;
+  margin-bottom: 10px;
+}
+#products{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#product{
+  padding-bottom: 40px;
+}
+
+#rating{
+  border-top:  $borderGrey;
+  padding-top: 5px;
+}
+
+#star {
+  color:$orange;
+}
+#shoe{
+  border-bottom:  $borderGrey;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+#descrip{
+  padding: 10px;
+}
+
+#buy{
+  background-color: $orange;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border: none !important;
+}
+#buy p{
+    margin: 0 !important;
+  }
+
+#price{
+  padding-top: 10px;
+  border-top: $borderGrey;
+  display: flex;
+  justify-content: space-between;
+}
+#price p{
+  color: $orange;
+}
+#signup{
+  width: 100%;
+  background-color: $orange;
+  height: 101px;
 }
