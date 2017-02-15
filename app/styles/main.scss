@@ -2,22 +2,28 @@ $icon-font-path: '../fonts/';
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 // endbower
 $greyish:#7e7f84;
 $orange:#f45a40;
+$lightOrange: #ff674f;
 $grey: #777;
 $whiteish: #e5e5e5;
 $p-font-size: 20px;
 $font-stack: Arial;
 $font-header: PT sans;
 $borderGrey:  1px solid $whiteish;
+$footerColor: #2a2d34;
+$footerFontColor:#67696e;
+$footerFont: white;
+
+h8{
+  color: $footerFont;
+}
 
 
 /* Space out content a bit */
 body {
   padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 /* Custom page header */
@@ -33,7 +39,28 @@ body {
     padding-bottom: 19px;
   }
 }
+#logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#contact{
+  font-family: $font-stack;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  i{
+    padding-left: 10px;
 
+    input {
+      background-color: $whiteish;
+      border:8px solid $whiteish;
+      margin:0;
+      padding:0;
+    }
+  }
+
+}
 .nav a{
   color: $grey !important;
 }
@@ -61,6 +88,30 @@ body {
   color: $greyish;
 }
 
+#caption{
+  background-color: rgba(000,000,000, 0.5) !important ;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  left: 0;
+  bottom: 475px;
+  width:600px;
+  text-align: left;
+  padding-bottom: 20px;
+    p{
+      font-size:1em;
+    }
+}
+#shopBra{
+  background-color: $lightOrange;
+  border: 1px solid $lightOrange;
+  color: white;
+  padding: 10px;
+}
+
+
 #orange{
   height: 15px;
   border-top: 8px solid $orange;
@@ -70,8 +121,7 @@ body {
   z-index:999;
 }
 
-#cta{
-  padding-top: 70px; 
+#cta{ 
   display: flex;
   justify-content: space-between;
 }
@@ -159,4 +209,112 @@ body {
   width: 100%;
   background-color: $orange;
   height: 101px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:white;
+}
+#signup input{
+    border: 0;
+}
+
+#signupBut{
+  background-color: $lightOrange;
+  border: 1px solid $lightOrange;
+  color: white;
+}
+#footer{
+  height: 335px;
+  width: 100%;
+  background-color: $footerColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#blog{
+  color:white;
+  height: 300px;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+#blog p{
+  color: $footerFontColor;
+}
+#blog i{
+  padding-right: 10px;
+}
+.fa-facebook{
+  color:$orange;
+}
+#vimeo{
+  color: white;
+}
+
+#supportRow{
+  display: flex;
+  flex: wrap;
+}
+#supportRow p{
+  padding-right: 30px;
+}
+
+.selected img {
+	opacity:0.5;
+}
+#slider-thumbs img{
+  width: 150px;
+}
+#myCarousel{
+  margin-top:20px;
+  height:300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: $borderGrey;
+}
+.carousel-inner{
+  display: flex;
+  justify-content: center;
+}
+
+
+#tabs a{
+  padding-right: 5px;
+  background-color: $whiteish;
+}
+#details{
+  padding-top: 30px; 
+  display: flex;
+  flex-direction: column;
+}
+#aPrice{
+  display: flex;
+  justify-content: space-between;
+}
+#save{
+  text-align: right;
+}
+#size{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  select.form-control {
+  -moz-appearance: none;
+   -webkit-appearance: none;
+   appearance: none;
+}
+  #sel1{
+    height: 50px;
+    border-radius: 0px;
+
+  }
+  input{
+    height: 50px;
+  }
 }
